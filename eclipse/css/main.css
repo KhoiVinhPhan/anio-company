@@ -43,7 +43,7 @@
   font-weight: 300; }
 
 body {
-  color: #828bb2;
+  color: #D7FFF1;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 300;
@@ -112,7 +112,7 @@ h4,
 h5,
 h6 {
   font-family: "Playfair Display", serif;
-  color: #222222;
+  color: #F7AA97;
   line-height: 1.2em;
   margin-bottom: 0;
   margin-top: 0;
@@ -646,7 +646,7 @@ th {
       padding-bottom: 40px; } }
   .section-title h2 {
     font-size: 42px;
-    color: #222;
+    color: #F7AA97;
     margin-bottom: 20px; }
     @media (max-width: 768px) {
       .section-title h2 {
@@ -817,7 +817,9 @@ th {
   position: fixed;
   left: 0;
   width: 100%;
-  background: #222222; }
+  background: #AF4034; 
+
+}
 
 #search-input-box {
   position: fixed;
@@ -1011,7 +1013,7 @@ th {
   padding-right: 20px; }
   .feature-item i {
     font-size: 30px;
-    color: #828bb2; }
+    color: #F7AA97; }
   .feature-item h4 {
     font-size: 18px;
     margin-bottom: 20px; }
@@ -1068,6 +1070,7 @@ th {
       opacity: 1; }
 
 .single-popular-course .details {
+  color: #3F4B3B;
   padding: 40px 30px;
   background: #f9f9fb; }
 .single-popular-course .thumb {
