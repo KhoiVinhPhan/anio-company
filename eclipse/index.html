@@ -30,6 +30,10 @@
     <link rel="stylesheet" href="css/hexagons.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <!-- Start WOWSlider.com HEAD section -->
+    <link rel="stylesheet" type="text/css" href="slider/engine1/style.css" />
+    <script type="text/javascript" src="slider/engine1/jquery.js"></script>
+    <!-- End WOWSlider.com HEAD section -->
 </head>
 
 <body>
@@ -86,32 +90,46 @@
                 </form>
             </div>
         </div>
+        
     </header>
     <!-- ================ End Header Area ================= -->
-    <!-- ================ start banner Area ================= -->
-    <section class="home-banner-area">
-        <div class="container">
-            <div class="row justify-content-center fullscreen align-items-center">
-                <div class="col-lg-5 col-md-8 home-banner-left">
-                    <h1 class="text-white">
-                        Luôn là tốt nhất
-                    </h1>
-                    <p class="mx-auto text-white  mt-20 mb-40">
-                        "Chúng tôi luôn nỗ lực không ngừng để có thể hoàn thiện những kỹ năng trong công việc nhằm đem lại một sản phẩm chất lượng nhất"
-                    </p>
-                </div>
-                <div class="offset-lg-2 col-lg-5 col-md-12 home-banner-right">
-                    <img class="img-fluid" src="img/header-img.png" alt="" />
-                </div>
+    <!-- ================ Start slider ================= -->
+    <section class="u-margin__top--82">
+        <!-- Start WOWSlider.com BODY section -->
+        <div id="wowslider-container1">
+            <div class="ws_images">
+                <ul>
+                    <li>
+                        <img src="slider/data1/images/banner.jpg" alt="banner" title="banner" id="wows1_0"/>
+                    </li>
+                    <li>
+                        <img src="slider/data1/images/banner1.jpg" alt="bootstrap carousel" title="banner1" id="wows1_1"/>
+                    </li>
+                    <li><img src="slider/data1/images/banner2.jpg" alt="banner2" title="banner2" id="wows1_2"/>
+                    </li>
+                </ul>
             </div>
-        </div>
+                <div class="ws_bullets"><div>
+                    <a href="#" title="banner">
+                        <span><img src="slider/data1/tooltips/banner.jpg" alt="banner"/>1</span>
+                    </a>
+                    <a href="#" title="banner1">
+                        <span><img src="slider/data1/tooltips/banner1.jpg" alt="banner1"/>2</span>
+                    </a>
+                    <a href="#" title="banner2">
+                        <span><img src="slider/data1/tooltips/banner2.jpg" alt="banner2"/>3</span>
+                    </a>
+                </div></div>
+            <div class="ws_shadow"></div>
+        </div>  
+        <!-- End WOWSlider.com BODY section -->
     </section>
-    <!-- ================ End banner Area ================= -->
+    <!-- ================ End slider ================= -->
     <!-- ================ Start Feature Area ================= -->
-    <section class="feature-area">
+    <section class="">
         <div class="container-fluid">
             <div class="feature-inner row">
-                <div class="col-lg-2 col-md-6">
+                <div class="col-lg-3 col-md-6">
                     <div class="feature-item d-flex">
                         <i class="ti-book"></i>
                         <div class="ml-20">
@@ -122,7 +140,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-6">
+                <div class="col-lg-3 col-md-6">
                     <div class="feature-item d-flex">
                         <i class="ti-cup"></i>
                         <div class="ml-20">
@@ -133,7 +151,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-6">
+                <div class="col-lg-3 col-md-6">
                     <div class="feature-item d-flex border-right-0">
                         <i class="ti-desktop"></i>
                         <div class="ml-20">
@@ -728,6 +746,8 @@
     <script src="js/waypoints.min.js"></script>
     <script src="js/jquery.nice-select.min.js"></script>
     <script src="js/main.js"></script>
+    <script type="text/javascript" src="slider/engine1/wowslider.js"></script>
+    <script type="text/javascript" src="slider/engine1/script.js"></script>
 </body>
 
 </html>

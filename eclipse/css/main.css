@@ -783,7 +783,7 @@ th {
 }
 
 .section-gap {
-    padding: 120px 0;
+    padding: 60px 0;
 }
 
 @media (max-width: 991px) {
@@ -951,11 +951,11 @@ th {
 }
 
 .default-header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 9;
+    z-index: 1000;
 }
 
 .navbar {
@@ -4545,6 +4545,7 @@ h6 {
 }
 
 .popular-content {
+    border: 1px solid #15bba4;
     border-bottom: 5px solid #15bba4;
 }
 
@@ -4556,6 +4557,9 @@ h6 {
 }
 .u-margin__top--80 {
     margin-top: 80px;
+}
+.u-margin__top--82 {
+    margin-top: 82px;
 }
 
 /*# sourceMappingURL=main.css.map */
