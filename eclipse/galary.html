@@ -30,6 +30,67 @@
     <link rel="stylesheet" href="css/hexagons.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css" />
     <link rel="stylesheet" href="css/main.css" />
+
+    <script type="text/javascript" src="highslide/highslide/highslide-with-gallery.js"></script>
+    <link rel="stylesheet" type="text/css" href="highslide/highslide/highslide.css" />
+    <script type="text/javascript">
+        hs.graphicsDir = 'highslide/highslide/graphics/';
+        hs.align = 'center';
+        hs.transitions = ['expand', 'crossfade'];
+        hs.fadeInOut = true;
+        hs.dimmingOpacity = 0.8;
+        hs.wrapperClassName = 'borderless floating-caption';
+        hs.captionEval = 'this.thumb.alt';
+        hs.marginLeft = 100; // make room for the thumbstrip
+        hs.marginBottom = 80 // make room for the controls and the floating caption
+        hs.numberPosition = 'caption';
+        hs.lang.number = '%1/%2';
+
+        // Add the slideshow providing the controlbar and the thumbstrip
+        hs.addSlideshow({
+            //slideshowGroup: 'group1',
+            interval: 5000,
+            repeat: false,
+            useControls: true,
+            overlayOptions: {
+                className: 'text-controls',
+                position: 'bottom center',
+                relativeTo: 'viewport',
+                offsetX: 50,
+                offsetY: -5
+
+            },
+            thumbstrip: {
+                position: 'middle left',
+                mode: 'vertical',
+                relativeTo: 'viewport'
+            }
+        });
+
+        // Add the simple close button
+        hs.registerOverlay({
+            html: '<div class="closebutton" onclick="return hs.close(this)" title="Close"></div>',
+            position: 'top right',
+            fade: 2 // fading the semi-transparent overlay looks bad in IE
+        });
+    </script>
+    <style type="text/css">
+    /* Center the text in the caption */
+    .highslide-caption {
+        width: 100%;
+        text-align: center;
+    }
+    /* Remove the close button from the controls since we already have one in the corner of the image */
+    .highslide-close {
+        display: none !important;
+    }
+    /* Put the image number in front of the caption */
+    .highslide-number {
+        display: inline;
+        padding-right: 1em;
+        color: white;
+    }
+    </style>
 </head>
 
 <body>
@@ -47,8 +108,8 @@
                     <ul class="navbar-nav">
                         <li><a href="index.html">Trang chủ</a></li>
                         <li><a href="about.html">Về chúng tôi</a></li>
-                        <li><a class="active" href="courses.html">Dịch vụ</a></li>
-                        <li><a href="galary.html">Galary</a></li>
+                        <li><a href="courses.html">Dịch vụ</a></li>
+                        <li><a class="active" href="galary.html">Galary</a></li>
                         <!-- Dropdown -->
                         <!-- <li class="dropdown">
               <a class="dropdown-toggle" href="#" dât-toggle="dropdown">
@@ -95,7 +156,7 @@
             <div class="row justify-content-center align-items-center">
                 <div class="col-lg-12 banner-right">
                     <h1 class="text-white">
-                        Courses
+                        Galary
                     </h1>
                     <p class="mx-auto text-white  mt-20 mb-40">
                         In the history of modern astronomy, there is probably no one greater leap forward than the building.
@@ -104,7 +165,7 @@
                         <span class="box">
                             <a href="index.html">Home </a>
                             <i class="lnr lnr-arrow-right"></i>
-                            <a href="courses.html">Courses</a>
+                            <a href="courses.html">Galary</a>
                         </span>
                     </div>
                 </div>
@@ -119,138 +180,168 @@
                 <div class="col-lg-12">
                     <div class="section-title text-left">
                         <h2>
-                            Dịch vụ của Anio Company
+                            Galary của Anio Company
                         </h2>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 u-margin__bottom--30">
-                    <div class="single-popular-course popular-content">
-                        <a href="javascript:;" title="service">
+                    <div class="single-popular-course">
+                        <a href="img/img1.jpg" title="service" onclick="return hs.expand(this)">
                             <div class="thumb">
-                                <img class="f-img img-fluid mx-auto" src="img/blog/feature-img3.jpg" alt="" />
-                            </div>
-                            <div class="details">
-                                <div class="d-flex justify-content-between mb-20">
-                                    <p class="name">Gói 1: abc</p>
-                                    <p class="value">10.000.000 VND</p>
-                                </div>
-                                <p class="include">Bao gồm những dịch vụ sau: </p>
-                                <div>
-                                    <p><i class="fa fa-check" aria-hidden="true"></i> 02 nhiếp ảnh gia</p>
-                                    <p><i class="fa fa-check" aria-hidden="true"></i> 100 ảnh qua chỉnh sửa</p>
-                                    <p><i class="fa fa-check" aria-hidden="true"></i> 1 photobook</p>
-                                    <p><i class="fa fa-check" aria-hidden="true"></i> 1 quay phim</p>
-                                </div>
+                                <img class="f-img img-fluid mx-auto" src="img/img1.jpg" alt="" />
                             </div>
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 u-margin__bottom--30">
-                    <div class="single-popular-course popular-content">
-                        <a href="javascript:;" title="service">
+                    <div class="single-popular-course">
+                        <a href="img/img2.jpg" title="service" onclick="return hs.expand(this)">
                             <div class="thumb">
-                                <img class="f-img img-fluid mx-auto" src="img/blog/feature-img3.jpg" alt="" />
-                            </div>
-                            <div class="details">
-                                <div class="d-flex justify-content-between mb-20">
-                                    <p class="name">Gói 1: abc</p>
-                                    <p class="value">10.000.000 VND</p>
-                                </div>
-                                <p class="include">Bao gồm những dịch vụ sau: </p>
-                                <div>
-                                    <p><i class="fa fa-check" aria-hidden="true"></i> 02 nhiếp ảnh gia</p>
-                                    <p><i class="fa fa-check" aria-hidden="true"></i> 100 ảnh qua chỉnh sửa</p>
-                                    <p><i class="fa fa-check" aria-hidden="true"></i> 1 photobook</p>
-                                    <p><i class="fa fa-check" aria-hidden="true"></i> 1 quay phim</p>
-                                </div>
+                                <img class="f-img img-fluid mx-auto" src="img/img2.jpg" alt="" />
                             </div>
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 u-margin__bottom--30">
-                    <div class="single-popular-course popular-content">
-                        <a href="javascript:;" title="service">
+                    <div class="single-popular-course">
+                        <a href="img/img3.jpg" title="service" onclick="return hs.expand(this)">
                             <div class="thumb">
-                                <img class="f-img img-fluid mx-auto" src="img/blog/feature-img3.jpg" alt="" />
-                            </div>
-                            <div class="details">
-                                <div class="d-flex justify-content-between mb-20">
-                                    <p class="name">Gói 1: abc</p>
-                                    <p class="value">10.000.000 VND</p>
-                                </div>
-                                <p class="include">Bao gồm những dịch vụ sau: </p>
-                                <div>
-                                    <p><i class="fa fa-check" aria-hidden="true"></i> 02 nhiếp ảnh gia</p>
-                                    <p><i class="fa fa-check" aria-hidden="true"></i> 100 ảnh qua chỉnh sửa</p>
-                                    <p><i class="fa fa-check" aria-hidden="true"></i> 1 photobook</p>
-                                    <p><i class="fa fa-check" aria-hidden="true"></i> 1 quay phim</p>
-                                </div>
+                                <img class="f-img img-fluid mx-auto" src="img/img3.jpg" alt="" />
                             </div>
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 u-margin__bottom--30">
-                    <div class="single-popular-course popular-content">
-                        <a href="javascript:;" title="service">
+                    <div class="single-popular-course">
+                        <a href="img/img4.jpg" title="service" onclick="return hs.expand(this)">
                             <div class="thumb">
-                                <img class="f-img img-fluid mx-auto" src="img/blog/feature-img3.jpg" alt="" />
-                            </div>
-                            <div class="details">
-                                <div class="d-flex justify-content-between mb-20">
-                                    <p class="name">Gói 1: abc</p>
-                                    <p class="value">10.000.000 VND</p>
-                                </div>
-                                <p class="include">Bao gồm những dịch vụ sau: </p>
-                                <div>
-                                    <p><i class="fa fa-check" aria-hidden="true"></i> 02 nhiếp ảnh gia</p>
-                                    <p><i class="fa fa-check" aria-hidden="true"></i> 100 ảnh qua chỉnh sửa</p>
-                                    <p><i class="fa fa-check" aria-hidden="true"></i> 1 photobook</p>
-                                    <p><i class="fa fa-check" aria-hidden="true"></i> 1 quay phim</p>
-                                </div>
+                                <img class="f-img img-fluid mx-auto" src="img/img4.jpg" alt="" />
                             </div>
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 u-margin__bottom--30">
-                    <div class="single-popular-course popular-content">
-                        <a href="javascript:;" title="service">
+                    <div class="single-popular-course">
+                        <a href="img/img5.jpg" title="service" onclick="return hs.expand(this)">
                             <div class="thumb">
-                                <img class="f-img img-fluid mx-auto" src="img/blog/feature-img3.jpg" alt="" />
-                            </div>
-                            <div class="details">
-                                <div class="d-flex justify-content-between mb-20">
-                                    <p class="name">Gói 1: abc</p>
-                                    <p class="value">10.000.000 VND</p>
-                                </div>
-                                <p class="include">Bao gồm những dịch vụ sau: </p>
-                                <div>
-                                    <p><i class="fa fa-check" aria-hidden="true"></i> 02 nhiếp ảnh gia</p>
-                                    <p><i class="fa fa-check" aria-hidden="true"></i> 100 ảnh qua chỉnh sửa</p>
-                                    <p><i class="fa fa-check" aria-hidden="true"></i> 1 photobook</p>
-                                    <p><i class="fa fa-check" aria-hidden="true"></i> 1 quay phim</p>
-                                </div>
+                                <img class="f-img img-fluid mx-auto" src="img/img5.jpg" alt="" />
                             </div>
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 u-margin__bottom--30">
-                    <div class="single-popular-course popular-content">
-                        <a href="javascript:;" title="service">
+                    <div class="single-popular-course">
+                        <a href="img/img6.jpg" title="service" onclick="return hs.expand(this)">
                             <div class="thumb">
-                                <img class="f-img img-fluid mx-auto" src="img/blog/feature-img3.jpg" alt="" />
+                                <img class="f-img img-fluid mx-auto" src="img/img6.jpg" alt="" />
                             </div>
-                            <div class="details">
-                                <div class="d-flex justify-content-between mb-20">
-                                    <p class="name">Gói 1: abc</p>
-                                    <p class="value">10.000.000 VND</p>
-                                </div>
-                                <p class="include">Bao gồm những dịch vụ sau: </p>
-                                <div>
-                                    <p><i class="fa fa-check" aria-hidden="true"></i> 02 nhiếp ảnh gia</p>
-                                    <p><i class="fa fa-check" aria-hidden="true"></i> 100 ảnh qua chỉnh sửa</p>
-                                    <p><i class="fa fa-check" aria-hidden="true"></i> 1 photobook</p>
-                                    <p><i class="fa fa-check" aria-hidden="true"></i> 1 quay phim</p>
-                                </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 u-margin__bottom--30">
+                    <div class="single-popular-course">
+                        <a href="img/img7.jpg" title="service" onclick="return hs.expand(this)">
+                            <div class="thumb">
+                                <img class="f-img img-fluid mx-auto" src="img/img7.jpg" alt="" />
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 u-margin__bottom--30">
+                    <div class="single-popular-course">
+                        <a href="img/img8.jpg" title="service" onclick="return hs.expand(this)">
+                            <div class="thumb">
+                                <img class="f-img img-fluid mx-auto" src="img/img8.jpg" alt="" />
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 u-margin__bottom--30">
+                    <div class="single-popular-course">
+                        <a href="img/img9.jpg" title="service" onclick="return hs.expand(this)">
+                            <div class="thumb">
+                                <img class="f-img img-fluid mx-auto" src="img/img9.jpg" alt="" />
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 u-margin__bottom--30">
+                    <div class="single-popular-course">
+                        <a href="img/img1.jpg" title="service" onclick="return hs.expand(this)">
+                            <div class="thumb">
+                                <img class="f-img img-fluid mx-auto" src="img/img1.jpg" alt="" />
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 u-margin__bottom--30">
+                    <div class="single-popular-course">
+                        <a href="img/img2.jpg" title="service" onclick="return hs.expand(this)">
+                            <div class="thumb">
+                                <img class="f-img img-fluid mx-auto" src="img/img2.jpg" alt="" />
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 u-margin__bottom--30">
+                    <div class="single-popular-course">
+                        <a href="img/img3.jpg" title="service" onclick="return hs.expand(this)">
+                            <div class="thumb">
+                                <img class="f-img img-fluid mx-auto" src="img/img3.jpg" alt="" />
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 u-margin__bottom--30">
+                    <div class="single-popular-course">
+                        <a href="img/img4.jpg" title="service" onclick="return hs.expand(this)">
+                            <div class="thumb">
+                                <img class="f-img img-fluid mx-auto" src="img/img4.jpg" alt="" />
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 u-margin__bottom--30">
+                    <div class="single-popular-course">
+                        <a href="img/img5.jpg" title="service" onclick="return hs.expand(this)">
+                            <div class="thumb">
+                                <img class="f-img img-fluid mx-auto" src="img/img5.jpg" alt="" />
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 u-margin__bottom--30">
+                    <div class="single-popular-course">
+                        <a href="img/img6.jpg" title="service" onclick="return hs.expand(this)">
+                            <div class="thumb">
+                                <img class="f-img img-fluid mx-auto" src="img/img6.jpg" alt="" />
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 u-margin__bottom--30">
+                    <div class="single-popular-course">
+                        <a href="img/img7.jpg" title="service" onclick="return hs.expand(this)">
+                            <div class="thumb">
+                                <img class="f-img img-fluid mx-auto" src="img/img7.jpg" alt="" />
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 u-margin__bottom--30">
+                    <div class="single-popular-course">
+                        <a href="img/img8.jpg" title="service" onclick="return hs.expand(this)">
+                            <div class="thumb">
+                                <img class="f-img img-fluid mx-auto" src="img/img8.jpg" alt="" />
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 u-margin__bottom--30">
+                    <div class="single-popular-course">
+                        <a href="img/img9.jpg" title="service" onclick="return hs.expand(this)">
+                            <div class="thumb">
+                                <img class="f-img img-fluid mx-auto" src="img/img9.jpg" alt="" />
                             </div>
                         </a>
                     </div>
