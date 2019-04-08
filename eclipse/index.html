@@ -30,6 +30,10 @@
     <link rel="stylesheet" href="css/hexagons.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <!-- Start WOWSlider.com HEAD section -->
+    <link rel="stylesheet" type="text/css" href="slider/engine1/style.css" />
+    <script type="text/javascript" src="slider/engine1/jquery.js"></script>
+    <!-- End WOWSlider.com HEAD section -->
 </head>
 
 <body>
@@ -37,17 +41,18 @@
     <header class="default-header">
         <nav class="navbar navbar-expand-lg  navbar-light">
             <div class="container">
-                <a class="navbar-brand" href="index.html" style="color: white">
-          Anio Company
-        </a>
+                <a class="navbar-brand" href="index.html">
+                    Anio Company
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="lnr lnr-menu"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
                     <ul class="navbar-nav">
-                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a class="active" href="index.html">Trang chủ</a></li>
                         <li><a href="about.html">Về chúng tôi</a></li>
                         <li><a href="courses.html">Dịch vụ</a></li>
+                        <li><a href="galary.html">Galary</a></li>
                         <!-- Dropdown -->
                         <!-- <li class="dropdown">
               <a class="dropdown-toggle" href="#" dât-toggle="dropdown">
@@ -86,32 +91,46 @@
                 </form>
             </div>
         </div>
+        
     </header>
     <!-- ================ End Header Area ================= -->
-    <!-- ================ start banner Area ================= -->
-    <section class="home-banner-area">
-        <div class="container">
-            <div class="row justify-content-center fullscreen align-items-center">
-                <div class="col-lg-5 col-md-8 home-banner-left">
-                    <h1 class="text-white">
-                       Luôn là tốt nhất
-                    </h1>
-                    <p class="mx-auto text-white  mt-20 mb-40">
-                        "Chúng tôi luôn nỗ lực không ngừng để có thể hoàn thiện những kỹ năng trong công việc nhằm đem lại một sản phẩm chất lượng nhất"
-                    </p>
-                </div>
-                <div class="offset-lg-2 col-lg-5 col-md-12 home-banner-right">
-                    <img class="img-fluid" src="img/header-img.png" alt="" />
-                </div>
+    <!-- ================ Start slider ================= -->
+    <section class="u-margin__top--82">
+        <!-- Start WOWSlider.com BODY section -->
+        <div id="wowslider-container1">
+            <div class="ws_images">
+                <ul>
+                    <li>
+                        <img src="slider/data1/images/banner.jpg" alt="banner" title="banner" id="wows1_0"/>
+                    </li>
+                    <li>
+                        <img src="slider/data1/images/banner1.jpg" alt="bootstrap carousel" title="banner1" id="wows1_1"/>
+                    </li>
+                    <li><img src="slider/data1/images/banner2.jpg" alt="banner2" title="banner2" id="wows1_2"/>
+                    </li>
+                </ul>
             </div>
-        </div>
+                <div class="ws_bullets"><div>
+                    <a href="#" title="banner">
+                        <span><img src="slider/data1/tooltips/banner.jpg" alt="banner"/>1</span>
+                    </a>
+                    <a href="#" title="banner1">
+                        <span><img src="slider/data1/tooltips/banner1.jpg" alt="banner1"/>2</span>
+                    </a>
+                    <a href="#" title="banner2">
+                        <span><img src="slider/data1/tooltips/banner2.jpg" alt="banner2"/>3</span>
+                    </a>
+                </div></div>
+            <div class="ws_shadow"></div>
+        </div>  
+        <!-- End WOWSlider.com BODY section -->
     </section>
-    <!-- ================ End banner Area ================= -->
+    <!-- ================ End slider ================= -->
     <!-- ================ Start Feature Area ================= -->
-    <section class="feature-area">
+    <section class="">
         <div class="container-fluid">
             <div class="feature-inner row">
-                <div class="col-lg-2 col-md-6">
+                <div class="col-lg-3 col-md-6">
                     <div class="feature-item d-flex">
                         <i class="ti-book"></i>
                         <div class="ml-20">
@@ -122,7 +141,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-6">
+                <div class="col-lg-3 col-md-6">
                     <div class="feature-item d-flex">
                         <i class="ti-cup"></i>
                         <div class="ml-20">
@@ -133,7 +152,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-6">
+                <div class="col-lg-3 col-md-6">
                     <div class="feature-item d-flex border-right-0">
                         <i class="ti-desktop"></i>
                         <div class="ml-20">
@@ -154,8 +173,7 @@
             <div class="row justify-content-center section-title">
                 <div class="col-lg-12">
                     <h2>
-                        Dịch vụ của <br />
-                        Anio Company
+                        Dịch vụ của Anio Company
                     </h2>
                     <p>
                         Hãy xem và lựa chọn dịch vụ mà bạn mong muốn
@@ -164,112 +182,111 @@
             </div>
             <div class="owl-carousel popuar-course-carusel">
                 <div class="single-popular-course popular-content">
-                    <div class="thumb">
-                        <img class="f-img img-fluid mx-auto" src="img/popular-course/img1.jpg" alt="" />
-                    </div>
-                    <div class="details">
-                        <div class="d-flex justify-content-between mb-20">
-                            <p class="name">Gói 1: abc</p>
-                            <p class="value">10.000.000</p>
+                    <a href="javascript:;" title="service">
+                        <div class="thumb">
+                            <img class="f-img img-fluid mx-auto" src="img/popular-course/img1.jpg" alt="" />
                         </div>
-                        <a href="#">
-                            <h4>Bao gồm: </h4>
-                        </a>
-                        <div>
-                            <p>02 nhiếp ảnh gia</p>
-                            <p>100 ảnh qua chỉnh sửa</p>
-                            <p>1 photobook</p>
-                            <p>1 quay phim</p>
+                        <div class="details">
+                            <div class="d-flex justify-content-between mb-20">
+                                <p class="name">Gói 1: abc</p>
+                                <p class="value">10.000.000 VND</p>
+                            </div>
+                            <p class="include">Bao gồm những dịch vụ sau: </p>
+                            <div>
+                                <p><i class="fa fa-check" aria-hidden="true"></i> 02 nhiếp ảnh gia</p>
+                                <p><i class="fa fa-check" aria-hidden="true"></i> 100 ảnh qua chỉnh sửa</p>
+                                <p><i class="fa fa-check" aria-hidden="true"></i> 1 photobook</p>
+                                <p><i class="fa fa-check" aria-hidden="true"></i> 1 quay phim</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="single-popular-course popular-content">
-                    <div class="thumb">
-                        <img class="f-img img-fluid mx-auto" src="img/popular-course/img1.jpg" alt="" />
-                    </div>
-                    <div class="details">
-                        <div class="d-flex justify-content-between mb-20">
-                            <p class="name">Gói 2: abc</p>
-                            <p class="value">10.000.000</p>
+                    <a href="javascript:;" title="service">
+                        <div class="thumb">
+                            <img class="f-img img-fluid mx-auto" src="img/video-img.jpg" alt="" />
                         </div>
-                        <a href="#">
-                            <h4>Bao gồm: </h4>
-                        </a>
-                        <div>
-                            <p>02 nhiếp ảnh gia</p>
-                            <p>100 ảnh qua chỉnh sửa</p>
-                            <p>1 photobook</p>
-                            <p>1 quay phim</p>
+                        <div class="details">
+                            <div class="d-flex justify-content-between mb-20">
+                                <p class="name">Gói 1: abc</p>
+                                <p class="value">10.000.000 VND</p>
+                            </div>
+                            <p class="include">Bao gồm những dịch vụ sau: </p>
+                            <div>
+                                <p><i class="fa fa-check" aria-hidden="true"></i> 02 nhiếp ảnh gia</p>
+                                <p><i class="fa fa-check" aria-hidden="true"></i> 100 ảnh qua chỉnh sửa</p>
+                                <p><i class="fa fa-check" aria-hidden="true"></i> 1 photobook</p>
+                                <p><i class="fa fa-check" aria-hidden="true"></i> 1 quay phim</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="single-popular-course popular-content">
-                    <div class="thumb">
-                        <img class="f-img img-fluid mx-auto" src="img/popular-course/img1.jpg" alt="" />
-                    </div>
-                    <div class="details">
-                        <div class="d-flex justify-content-between mb-20">
-                            <p class="name">Gói 3: abc</p>
-                            <p class="value">10.000.000</p>
+                    <a href="javascript:;" title="service">
+                        <div class="thumb">
+                            <img class="f-img img-fluid mx-auto" src="img/blog/feature-img1.jpg" alt="" />
                         </div>
-                        <a href="#">
-                            <h4>Bao gồm: </h4>
-                        </a>
-                        <div>
-                            <p>02 nhiếp ảnh gia</p>
-                            <p>100 ảnh qua chỉnh sửa</p>
-                            <p>1 photobook</p>
-                            <p>1 quay phim</p>
+                        <div class="details">
+                            <div class="d-flex justify-content-between mb-20">
+                                <p class="name">Gói 1: abc</p>
+                                <p class="value">10.000.000 VND</p>
+                            </div>
+                            <p class="include">Bao gồm những dịch vụ sau: </p>
+                            <div>
+                                <p><i class="fa fa-check" aria-hidden="true"></i> 02 nhiếp ảnh gia</p>
+                                <p><i class="fa fa-check" aria-hidden="true"></i> 100 ảnh qua chỉnh sửa</p>
+                                <p><i class="fa fa-check" aria-hidden="true"></i> 1 photobook</p>
+                                <p><i class="fa fa-check" aria-hidden="true"></i> 1 quay phim</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="single-popular-course popular-content">
-                    <div class="thumb">
-                        <img class="f-img img-fluid mx-auto" src="img/popular-course/img1.jpg" alt="" />
-                    </div>
-                    <div class="details">
-                        <div class="d-flex justify-content-between mb-20">
-                            <p class="name">Gói 4: abc</p>
-                            <p class="value">10.000.000</p>
+                    <a href="javascript:;" title="service">
+                        <div class="thumb">
+                            <img class="f-img img-fluid mx-auto" src="img/blog/feature-img2.jpg" alt="" />
                         </div>
-                        <a href="#">
-                            <h4>Bao gồm: </h4>
-                        </a>
-                        <div>
-                            <p>02 nhiếp ảnh gia</p>
-                            <p>100 ảnh qua chỉnh sửa</p>
-                            <p>1 photobook</p>
-                            <p>1 quay phim</p>
+                        <div class="details">
+                            <div class="d-flex justify-content-between mb-20">
+                                <p class="name">Gói 1: abc</p>
+                                <p class="value">10.000.000 VND</p>
+                            </div>
+                            <p class="include">Bao gồm những dịch vụ sau: </p>
+                            <div>
+                                <p><i class="fa fa-check" aria-hidden="true"></i> 02 nhiếp ảnh gia</p>
+                                <p><i class="fa fa-check" aria-hidden="true"></i> 100 ảnh qua chỉnh sửa</p>
+                                <p><i class="fa fa-check" aria-hidden="true"></i> 1 photobook</p>
+                                <p><i class="fa fa-check" aria-hidden="true"></i> 1 quay phim</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="single-popular-course popular-content">
-                    <div class="thumb">
-                        <img class="f-img img-fluid mx-auto" src="img/popular-course/img1.jpg" alt="" />
-                    </div>
-                    <div class="details">
-                        <div class="d-flex justify-content-between mb-20">
-                            <p class="name">Gói 5: abc</p>
-                            <p class="value">10.000.000</p>
+                    <a href="javascript:;" title="service">
+                        <div class="thumb">
+                            <img class="f-img img-fluid mx-auto" src="img/blog/feature-img3.jpg" alt="" />
                         </div>
-                        <a href="#">
-                            <h4>Bao gồm: </h4>
-                        </a>
-                        <div>
-                            <p>02 nhiếp ảnh gia</p>
-                            <p>100 ảnh qua chỉnh sửa</p>
-                            <p>1 photobook</p>
-                            <p>1 quay phim</p>
+                        <div class="details">
+                            <div class="d-flex justify-content-between mb-20">
+                                <p class="name">Gói 1: abc</p>
+                                <p class="value">10.000.000 VND</p>
+                            </div>
+                            <p class="include">Bao gồm những dịch vụ sau: </p>
+                            <div>
+                                <p><i class="fa fa-check" aria-hidden="true"></i> 02 nhiếp ảnh gia</p>
+                                <p><i class="fa fa-check" aria-hidden="true"></i> 100 ảnh qua chỉnh sửa</p>
+                                <p><i class="fa fa-check" aria-hidden="true"></i> 1 photobook</p>
+                                <p><i class="fa fa-check" aria-hidden="true"></i> 1 quay phim</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-
             </div>
         </div>
     </section>
     <!-- ================ End Popular Course Area ================= -->
     <!-- ================ Start Video Area ================= -->
-    <section class="video-area section-gap-bottom">
+    <section class="video-area">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5">
@@ -288,25 +305,27 @@
                         <div class="single-video">
                             <div class="video-part">
                                 <img class="img-fluid" src="img/video-img.jpg" alt="">
-                                <div class="overlay"></div>
+                                <!-- <div class="overlay"></div> -->
                                 <a class="popup-youtube play-btn" href="https://www.youtube.com/watch?v=VufDd-QL1c0">
                                 </a>
                             </div>
                             <h4 class="text-white mb-20 mt-30">Anio tham dự sự kiến ...</h4>
                             <p class="text-white mb-20">
                                 Chúng tôi tiếp tục ...Chúng tôi tiếp tục ...Chúng tôi tiếp tục ...Chúng tôi tiếp tục ...Chúng tôi tiếp tục ...Chúng tôi tiếp tục ...Chúng tôi tiếp tục ...
+                                Chúng tôi tiếp tục ...Chúng tôi tiếp tục ...Chúng tôi tiếp tục ...Chúng tôi tiếp tục ...Chúng tôi tiếp tục ...Chúng tôi tiếp tục ...Chúng tôi tiếp tục ...
                             </p>
                         </div>
                         <div class="single-video">
                             <div class="video-part">
-                                <img class="img-fluid" src="img/video-img.jpg" alt="">
-                                <div class="overlay"></div>
+                                <img class="img-fluid" src="img/popular-course/img1.jpg" alt="">
+                                <!-- <div class="overlay"></div> -->
                                 <a class="popup-youtube play-btn" href="https://www.youtube.com/watch?v=VufDd-QL1c0">
                                 </a>
                             </div>
                             <h4 class="text-white mb-20 mt-30">Anio tham dự sự kiến ...</h4>
                             <p class="text-white mb-20">
                                 Chúng tôi tiếp tục ...Chúng tôi tiếp tục ...Chúng tôi tiếp tục ...Chúng tôi tiếp tục ...Chúng tôi tiếp tục ...Chúng tôi tiếp tục ...
+                                Chúng tôi tiếp tục ...Chúng tôi tiếp tục ...Chúng tôi tiếp tục ...Chúng tôi tiếp tục ...Chúng tôi tiếp tục ...Chúng tôi tiếp tục ...Chúng tôi tiếp tục ...
                             </p>
                         </div>
                     </div>
@@ -336,32 +355,35 @@
                         <h4>Địa chỉ</h4>
                         <div>
                             <p>
-                                xxx Cách mạng thánh 8 - Khuê Trung - Cẩm Lệ - Đà nẵng
+                                <span class="fa fa-check"></span> xxx Cách mạng thánh 8 - Khuê Trung - Cẩm Lệ - Đà nẵng
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mt--160">
+                <div class="col-lg-4 col-md-6">
                     <div class="other-feature-item">
                         <i class="ti-files"></i>
                         <h4>Hot line</h4>
                         <div>
                             <p>
-                               0906.419.050 (Mr.Vinh)
+                                <span class="fa fa-check"></span> 0906.419.050 (Mr.Vinh)
                             </p>
-                            <p> 
-                               0906.419.050 (Mrs Vinh)
+                            <p>
+                                <span class="fa fa-check"></span> 0906.419.050 (Mrs Vinh)
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mt--260">
+                <div class="col-lg-4 col-md-6 ">
                     <div class="other-feature-item">
                         <i class="ti-medall-alt"></i>
                         <h4>Tài khoản giao dịch</h4>
                         <div>
                             <p>
-                                Số tài khoản: 19234521093
+                                <span class="fa fa-check"></span> Số tài khoản: 19234521093
+                            </p>
+                            <p>
+                                <span class="fa fa-check"></span> Số tài khoản: 19234521093
                             </p>
                         </div>
                     </div>
@@ -372,29 +394,29 @@
                         <h4>Email</h4>
                         <div>
                             <p>
-                                Khoivinhphan@gmail.com
+                                <span class="fa fa-check"></span> Khoivinhphan@gmail.com
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mt--160">
+                <div class="col-lg-4 col-md-6">
                     <div class="other-feature-item">
                         <i class="ti-crown"></i>
                         <h4>Website</h4>
                         <div>
                             <p>
-                                aniocompany.com
+                                <span class="fa fa-check"></span> aniocompany.com
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mt--260">
+                <div class="col-lg-4 col-md-6">
                     <div class="other-feature-item">
                         <i class="ti-headphone-alt"></i>
                         <h4>Fanfage</h4>
                         <div>
                             <p>
-                                Aniocompany
+                                <span class="fa fa-check"></span> Aniocompany
                             </p>
                         </div>
                     </div>
@@ -414,7 +436,7 @@
                                 <img src="img/quote.png" alt="" />
                                 <div class="mt-40 text">
                                     <p>
-                                        Tôi luôn nổ lực không ngừng góp phần vào anio, Tôi luôn nổ lực không ngừng góp phần vào anio, Tôi luôn nổ lực không ngừng góp phần vào anio, Tôi luôn nổ lực không ngừng góp phần vào anio, Tôi luôn nổ lực không ngừng góp phần vào anio, 
+                                        Tôi luôn nổ lực không ngừng góp phần vào anio, Tôi luôn nổ lực không ngừng góp phần vào anio, Tôi luôn nổ lực không ngừng góp phần vào anio, Tôi luôn nổ lực không ngừng góp phần vào anio, Tôi luôn nổ lực không ngừng góp phần vào anio,
                                     </p>
                                 </div>
                                 <h4>Khoi vinh 1</h4>
@@ -433,7 +455,7 @@
                                 <img src="img/quote.png" alt="" />
                                 <div class="mt-40 text">
                                     <p>
-                                       Tôi luôn nổ lực không ngừng góp phần vào anio, Tôi luôn nổ lực không ngừng góp phần vào anio, Tôi luôn nổ lực không ngừng góp phần vào anio, Tôi luôn nổ lực không ngừng góp phần vào anio, Tôi luôn nổ lực không ngừng góp phần vào anio, 
+                                        Tôi luôn nổ lực không ngừng góp phần vào anio, Tôi luôn nổ lực không ngừng góp phần vào anio, Tôi luôn nổ lực không ngừng góp phần vào anio, Tôi luôn nổ lực không ngừng góp phần vào anio, Tôi luôn nổ lực không ngừng góp phần vào anio,
                                     </p>
                                 </div>
                                 <h4>Khoi vinh 2</h4>
@@ -449,45 +471,6 @@
         </div>
     </section>
     <!-- ================ End Testimonials Area ================= -->
-    <!-- ================ Start Registration Area ================= -->
-    <section class="registration-area">
-        <div class="container">
-            <div class="row align-items-end">
-                <div class="col-lg-5">
-                    <div class="section-title text-left text-white">
-                        <h2 class="text-white">
-                            Gửi những yêu cầu <br>
-                            cho Anio Company
-                        </h2>
-                        <p>
-                            Anio sẽ phản hổi nhanh nhất những thắc mắc cho bạn
-                        </p>
-                    </div>
-                </div>
-                <div class="offset-lg-3 col-lg-4 col-md-6">
-                    <div class="course-form-section">
-                        <h3 class="text-white">Form yêu cầu</h3>
-                        <p class="text-white">Nhập nội dung cần gửi</p>
-                        <form class="course-form-area contact-page-form course-form text-right" id="myForm" action="mail.html" method="post">
-                            <div class="form-group col-md-12">
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Name'">
-                            </div>
-                            <div class="form-group col-md-12">
-                                <input type="text" class="form-control" id="subject" name="subject" placeholder="Phone Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone Number'">
-                            </div>
-                            <div class="form-group col-md-12">
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'">
-                            </div>
-                            <div class="col-lg-12 text-center">
-                                <button class="btn text-uppercase">Gửi</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ================ End Registration Area ================= -->
     <!-- ================ Start Blog Post Area ================= -->
     <section class="blog-post-area section-gap">
         <div class="container-fluid">
@@ -495,8 +478,7 @@
                 <div class="col-lg-12">
                     <div class="section-title text-left">
                         <h2>
-                            Blog <br />
-                            Anio Company
+                            Blog Anio Company
                         </h2>
                         <p>
                             Chia sẻ những kỷ niệm về anio company
@@ -525,7 +507,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mt--160">
+                <div class="col-lg-4 col-md-6">
                     <div class="single-blog-post">
                         <img src="img/blog-post/b2.jpg" class="img-fluid" alt="" />
                         <div class="overlay"></div>
@@ -533,7 +515,7 @@
                             <p>anio</p>
                             <p>12-10-2019</p>
                         </div>
-                       <div class="text">
+                        <div class="text">
                             <h4 class="text-white">Anio tham gia hoạt động...</h4>
                             <div>
                                 <p>
@@ -547,12 +529,78 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mt--260">
+                <div class="col-lg-4 col-md-6">
                     <div class="single-blog-post">
                         <img src="img/blog-post/b3.jpg" class="img-fluid" alt="" />
                         <div class="overlay"></div>
                         <div class="top-text">
-                             <p>anio</p>
+                            <p>anio</p>
+                            <p>12-10-2019</p>
+                        </div>
+                        <div class="text">
+                            <h4 class="text-white">Anio tham gia hoạt động...</h4>
+                            <div>
+                                <p>
+                                    Nội dụng việc anio tham gia...
+                                </p>
+                            </div>
+                            <a href="#" class="primary-btn">
+                                Chi tiết
+                                <i class="fa fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog-post">
+                        <img src="img/blog-post/b1.jpg" class="img-fluid" alt="" />
+                        <div class="overlay"></div>
+                        <div class="top-text">
+                            <p>anio</p>
+                            <p>12-10-2019</p>
+                        </div>
+                        <div class="text">
+                            <h4 class="text-white">Anio tham gia hoạt động...</h4>
+                            <div>
+                                <p>
+                                    Nội dụng việc anio tham gia...
+                                </p>
+                            </div>
+                            <a href="#" class="primary-btn">
+                                Chi tiết
+                                <i class="fa fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog-post">
+                        <img src="img/blog-post/b2.jpg" class="img-fluid" alt="" />
+                        <div class="overlay"></div>
+                        <div class="top-text">
+                            <p>anio</p>
+                            <p>12-10-2019</p>
+                        </div>
+                        <div class="text">
+                            <h4 class="text-white">Anio tham gia hoạt động...</h4>
+                            <div>
+                                <p>
+                                    Nội dụng việc anio tham gia...
+                                </p>
+                            </div>
+                            <a href="#" class="primary-btn">
+                                Chi tiết
+                                <i class="fa fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog-post">
+                        <img src="img/blog-post/b3.jpg" class="img-fluid" alt="" />
+                        <div class="overlay"></div>
+                        <div class="top-text">
+                            <p>anio</p>
                             <p>12-10-2019</p>
                         </div>
                         <div class="text">
@@ -660,6 +708,8 @@
     <script src="js/waypoints.min.js"></script>
     <script src="js/jquery.nice-select.min.js"></script>
     <script src="js/main.js"></script>
+    <script type="text/javascript" src="slider/engine1/wowslider.js"></script>
+    <script type="text/javascript" src="slider/engine1/script.js"></script>
 </body>
 
 </html>
